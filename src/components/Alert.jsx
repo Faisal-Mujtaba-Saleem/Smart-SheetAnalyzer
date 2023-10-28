@@ -6,7 +6,7 @@ export default function Alert(props) {
     }
     return (
         <>
-            <div className={`alert alert-${props.customAlert.type} my-2`} role="alert">
+            <div className={`alert alert-${props.customAlert.type} my-2 mx-4 `} role="alert" style={{ display: 'block', width: 'auto' }}>
                 <strong>{`${capitalize(props.customAlert.type)}`}:
                 </strong>{` ${props.customAlert.msg} `}
                 {
