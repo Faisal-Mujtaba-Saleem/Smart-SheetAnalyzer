@@ -195,37 +195,44 @@ export default function Row(props) {
         (
             <>
                 <tr style={{ textAlign: 'center' }} className='table-info'>
-                    <th style={{ padding: '1rem' }} scope="row">{sno}</th>
+                    <th style={{ padding: '1.5rem 0rem' }} scope="row">{sno}</th>
                     <td>
-                        <input className='form-control text-center ' type="text" name="std_name-input" readOnly={readOnly} id="std_name-input" value={row.studentName} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="text" name="std_name-input" readOnly={readOnly} id="std_name-input" value={row.studentName} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td>
-                        {/* <span>Maths</span> */}
-                        <input className='form-control text-center ' type="number" name="sub_1-Marks" readOnly={readOnly} id="sub_1-input" value={row.subject_1Marks} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="number" name="sub_1-Marks" readOnly={readOnly} id="sub_1-input" value={row.subject_1Marks} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td>
-                        {/* <span>Physics</span> */}
-                        <input className='form-control text-center ' type="number" name="sub_2-Marks" readOnly={readOnly} id="sub_2-input" value={row.subject_2Marks} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="number" name="sub_2-Marks" readOnly={readOnly} id="sub_2-input" value={row.subject_2Marks} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td>
-                        {/* <span>Chemistry</span> */}
-                        <input className='form-control text-center ' type="number" name="sub_3-Marks" readOnly={readOnly} id="sub_3-input" value={row.subject_3Marks} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="number" name="sub_3-Marks" readOnly={readOnly} id="sub_3-input" value={row.subject_3Marks} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td>
-                        {/* <span>Biology</span> */}
-                        <input className='form-control text-center ' type="number" name="sub_4-Marks" readOnly={readOnly} id="sub_4-input" value={row.subject_4Marks} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="number" name="sub_4-Marks" readOnly={readOnly} id="sub_4-input" value={row.subject_4Marks} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td>
-                        {/* <span>S.St</span> */}
-                        <input className='form-control text-center ' type="number" name="sub_5-Marks" readOnly={readOnly} id="sub_5-input" value={row.subject_5Marks} onChange={handleOnChange} />
+                        <div className='mt-3 mb-1 '>
+                            <input className='form-control text-center ' type="number" name="sub_5-Marks" readOnly={readOnly} id="sub_5-input" value={row.subject_5Marks} onChange={handleOnChange} />
+                        </div>
                     </td>
                     <td >
-                        <button className='btn btn-primary ' onClick={handleEdit_CommitClick}>{buttonText}
+                        <button className='btn btn-primary mt-3 mb-1 ' onClick={handleEdit_CommitClick}>{buttonText}
                             {isEditIcon && <i className="fa fa-pencil ms-2 "></i>}
                         </button>
                     </td>
                     <td >
-                        <button className='btn btn-light '>
+                        <button className='btn btn-light mt-3 mb-1 '>
                             <span className='visually-hidden '>{index}</span>
                             <i style={{ color: 'red', margin: ' 0.1rem 0' }} className="material-icons" onClick={(e) => {
                                 deleteRow(row);

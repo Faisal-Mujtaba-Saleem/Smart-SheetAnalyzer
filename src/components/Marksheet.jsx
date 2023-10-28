@@ -170,30 +170,48 @@ export default function Marksheet(props) {
             <table className="table table-dark table-sm">
                 <thead>
                     <tr style={{ textAlign: 'center' }} className='table-dark'>
-                        <th scope="col">#</th>
-                        <th scope="col">Student Name</th>
                         <th scope="col">
-                            <span>Subject.1</span>
-                            <input type="text" name="sub_1-name" className='form-control text-center ' id="sub_1-name" value={subject_1Name} onChange={(e) => { setSubject_1Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            <div className='my-4 mx-1'> # </div>
                         </th>
                         <th scope="col">
-                            <span>Subject.2</span>
-                            <input type="text" name="sub_2-name" className='form-control text-center ' id="sub_2-name" value={subject_2Name} onChange={(e) => { setSubject_2Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            <div className='my-4'> Student Name </div>
                         </th>
                         <th scope="col">
-                            <span>Subject.3</span>
-                            <input type="text" name="sub_3-name" className='form-control text-center ' id="sub_3-name" value={subject_3Name} onChange={(e) => { setSubject_3Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            <div className='my-3'>
+                                <span>Subject.1</span>
+                                <input type="text" name="sub_1-name" className='form-control text-center ' id="sub_1-name" value={subject_1Name} onChange={(e) => { setSubject_1Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            </div>
                         </th>
                         <th scope="col">
-                            <span>Subject.4</span>
-                            <input type="text" name="sub_4-name" className='form-control text-center ' id="sub_4-name" value={subject_4Name} onChange={(e) => { setSubject_4Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            <div className='my-3'>
+                                <span>Subject.2</span>
+                                <input type="text" name="sub_2-name" className='form-control text-center ' id="sub_2-name" value={subject_2Name} onChange={(e) => { setSubject_2Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            </div>
                         </th>
                         <th scope="col">
-                            <span>Subject.5</span>
-                            <input type="text" name="sub_5-name" className='form-control text-center ' id="sub_5-name" value={subject_5Name} onChange={(e) => { setSubject_5Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            <div className='my-3'>
+                                <span>Subject.3</span>
+                                <input type="text" name="sub_3-name" className='form-control text-center ' id="sub_3-name" value={subject_3Name} onChange={(e) => { setSubject_3Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            </div>
                         </th>
-                        <th scope="col">Edit/Commit</th>
-                        <th scope="col">Remove</th>
+                        <th scope="col">
+                            <div className='my-3'>
+                                <span>Subject.4</span>
+                                <input type="text" name="sub_4-name" className='form-control text-center ' id="sub_4-name" value={subject_4Name} onChange={(e) => { setSubject_4Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div className='my-3'>
+                                <span>Subject.5</span>
+                                <input type="text" name="sub_5-name" className='form-control text-center ' id="sub_5-name" value={subject_5Name} onChange={(e) => { setSubject_5Name(e.target.value) }} onClick={handleMarksTargetClick} />
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div className='my-4 mx-1'> Edit/Commit </div>
+                        </th>
+                        <th scope="col">
+                            <div className='my-4 mx-1'> Remove </div>
+                        </th>
                     </tr>
                 </thead>
 

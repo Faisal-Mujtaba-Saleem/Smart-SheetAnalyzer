@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title='SMART - SheetAnalyzer' searchbarText={searchbarText} setSearchbarText={setSearchbarText} />
+        <Navbar title='SMART-SheetAnalyzer' searchbarText={searchbarText} setSearchbarText={setSearchbarText} />
         <Routes>
           <Route path='/' element={<Marksheet searchbarText={searchbarText} />} />
-          <Route path='/about' element={<About appName="Smart-SheetAnalyzer" />} />
+          <Route path='/about' element={<About appName="SMART-SheetAnalyzer" />} />
         </Routes>
       </Router>
     </>
