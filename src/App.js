@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +11,11 @@ import About from './components/About';
 
 function App() {
   const [searchbarText, setSearchbarText] = useState('');
-  alert(`Add the subjects names first under the Subject.1, Subject.2, Subject.3, Subject.4 & Subject.5 one by one simultaneously then continue with Add Row.`);
+  
+ useEffect(() => {
+    alert(`Add the subjects names first under the Subject.1, Subject.2, Subject.3, Subject.4 & Subject.5 one by one simultaneously then continue with Add Row.`);
+}, []);
+  
   return (
     <>
       <Router>
