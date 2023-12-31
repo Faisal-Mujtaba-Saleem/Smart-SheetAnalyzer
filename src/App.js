@@ -12,9 +12,9 @@ import About from './components/About';
 function App() {
   const [searchbarText, setSearchbarText] = useState('');
   
- useEffect(() => {
+ setTimeout(() => {
     alert(`Add the subjects names first under the Subject.1, Subject.2, Subject.3, Subject.4 & Subject.5 one by one simultaneously then continue with Add Row.`);
-}, []);
+}, 2000);
   
   return (
     <>
